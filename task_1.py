@@ -1,6 +1,5 @@
 from inline import Here
 
-
 def get_assignment_map_from_checkpoint(tvars, init_checkpoint):
     """Compute the union of the current variables and checkpoint variables."""
     assignment_map = {}
@@ -29,4 +28,3 @@ def get_assignment_map_from_checkpoint(tvars, init_checkpoint):
         initialized_variable_names[name + ":0"] = 1
 
     return (assignment_map, initialized_variable_names)
-

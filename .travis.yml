@@ -1,13 +1,13 @@
 language: python
 python:
-	- 3.9.12
-	- 4.12.0
+- 3.9.12
+- 4.12.0
 
 install:
-	- pip install -r requirements.txt
+- pip install -r requirements.txt
 
 before_script:
-	- source prepare-conda-env.sh
+- source prepare-conda-env.sh
 
 script:
-	- pytest task_1.py task_2.py task_3.py task_4.py
+- pytest task_1.py task_2.py task_3.py task_4.py

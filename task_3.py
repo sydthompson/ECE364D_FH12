@@ -18,7 +18,7 @@ def value_is_list(my_list):
     # pairs, since Python 3 doesn't allow comparisons such as `<` between dictionaries.
     checked_list.sort(key=lambda x: sorted(x.items()) if isinstance(x, dict) else x)
     # inline test here
-    Here().given(checked_list, list).check_eq(checked_list, not None)
+    Here().given(x, list).check_eq(checked_list, not None)
             
     return checked_list
 

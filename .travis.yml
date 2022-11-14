@@ -1,0 +1,9 @@
+language: python
+python:
+	- 3.9.12
+
+before_script:
+	- source prepare-conda-env.sh
+
+script:
+	- pytest task_1.py task_2.py task_3.py task_4.py

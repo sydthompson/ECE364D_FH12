@@ -37,6 +37,3 @@ def _detect_nodejs() -> str:
         f"node.js v{version_repr} or higher is needed to allow compilation of custom models "
         + '("conda install nodejs" or follow https://nodejs.org/en/download/)'
     )
-
-
-_detect_nodejs()

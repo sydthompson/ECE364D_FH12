@@ -11,7 +11,7 @@ def get_assignment_map_from_checkpoint(tvars, init_checkpoint):
         m = re.match("^(.*):\\d+$", name)
 
         # inline test here
-        Here().given(namer, "^(.*):\\d+$").check_false(m) # determine whether 'name' can be united
+        Here().given(name, "^(.*):\\d+$").check_false(m) # determine whether 'name' can be united
         if m is not None:
             name = m.group(1)
         name_to_variable[name] = var

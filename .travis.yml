@@ -14,5 +14,4 @@ script:
 - pytest tutorial_example_3.py
 - pytest task_1.py
 - pytest task_2.py
-- pytest task_3.py
 - pytest task_4.py
